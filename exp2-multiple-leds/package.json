@@ -1,11 +1,11 @@
 {
-  "name": "base-project-structure",
+  "name": "exp2-multiple-leds",
   "version": "1.0.0",
   "description": "This package.json is used to be the default for all of my Johnny-Five experiments",
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
-    "start": "npm run build && t2 run dist/*.js"
+    "start": "npm run build && t2 run dist/side-to-side.js"
   },
   "author": "Matthew Zygowicz",
   "license": "ISC",
