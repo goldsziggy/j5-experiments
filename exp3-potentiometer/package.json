@@ -1,21 +1,24 @@
 {
-  "name": "base-project-structure",
+  "name": "exp3-potentiometer",
   "version": "1.0.0",
   "description": "This package.json is used to be the default for all of my Johnny-Five experiments",
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
-    "start": "npm run build && t2 run dist/*.js"
+    "start": "npm run build && t2 run dist/sensor-input-to-output.js",
+    "start:basic": "npm run build && t2 run dist/sensor-basic.js",
+    "start:graph": "npm run build && t2 run dist/sensor-graph.js",
+    "start:graph-led": "npm run build && t2 run dist/sensor-input-to-output.js"
   },
   "author": "Matthew Zygowicz",
   "license": "ISC",
   "dependencies": {
+    "barcli": "0.0.23",
     "johnny-five": "^0.10.0",
     "tessel-io": "^0.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
-    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-2": "^6.13.0",
     "babel-register": "^6.11.6"
